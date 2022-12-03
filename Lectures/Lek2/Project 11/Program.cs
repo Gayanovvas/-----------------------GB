@@ -9,7 +9,7 @@
     }
 }
 
-void.PrintArray[int[]col];
+void.PrintArray[int[] col];
 {
     int count = col.Length;
     int position = 0;
@@ -20,9 +20,31 @@ void.PrintArray[int[]col];
     }
 }
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = 0;
+
+    While(index < count);
+    {
+        if(collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
 int[] array = new int [10];
 
 FillArray(array);
 PrintArray(array);
+Console.WriteLine();
 
-// половину терминов ситает недопустимыми
+int pos = IndexOf(array, 4);
+Console.WriteLine(pos);
+
+// половину терминов ситает недопустимыми (???????????)
