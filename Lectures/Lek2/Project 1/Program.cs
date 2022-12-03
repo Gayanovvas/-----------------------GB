@@ -5,7 +5,6 @@
     if(arg3 > result) result = arg3;
     return result; 
 }
-
 int a1 = 15; 
 int b1 = 21;
 int c1 = 39;
@@ -21,3 +20,5 @@ int max2 = Max(a2, b2, c2);
 int max3 = Max(a3, b3, c3);
 int max = Max(max1, max2, max3);
 Console.WriteLine(max);
+
+// не работает; не понимаю, что нужно сделать
