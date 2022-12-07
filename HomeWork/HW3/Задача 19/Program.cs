@@ -3,7 +3,11 @@ Console.Clear();
 
 void FindEqual(int n)
 {
-    if(n/10000-(n/10)%10==0 && (n/1000)%10-n%10==0) 
+    int x1 = n/10000;
+    int x2 = (n/1000)%10;
+    int x4 = (n/10)%10;
+    int x5 = n%10;
+    if (x1==x5 && x2==x4) 
     {
         Console.WriteLine("Да");
     }
@@ -12,6 +16,7 @@ void FindEqual(int n)
         Console.WriteLine("Нет");
     }
 }
+
 int EnterData(string text)
 {
     Console.WriteLine(text);
@@ -21,7 +26,6 @@ int EnterData(string text)
 
 // Запросим координаты чисел
 int n = EnterData("Введите пятизначное число: ");
-// Анализируем данные
-int result = FindEqual(n);
+FindEqual(n);
 
 
