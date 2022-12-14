@@ -12,5 +12,5 @@ int[] CreateMassive(int count, int begin, int end)
     return array;
 }
 
-int[] line = CreateMassive(8, 0, 10);
-Console.WriteLine(line);
+int[] array = CreateMassive(8,-100,100);
+Console.WriteLine(String.Join(", ", array));
