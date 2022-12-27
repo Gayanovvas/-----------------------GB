@@ -73,4 +73,3 @@ int[,] matrix = FillArray(rows, columns, -10, 10);
 PrintArray(matrix);
 // Сортировка
 SortArray(matrix);
-
