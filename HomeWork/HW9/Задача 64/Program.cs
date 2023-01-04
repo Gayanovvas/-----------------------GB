@@ -3,12 +3,10 @@
 // // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-int Numbers (int N)
+string Numbers (int N)
 {
-    if (N==1) return N;
-    else
-    Console.Write($"{Numbers(N-1)}, ");
-    return N;
+    if (N==1) return N.ToString();
+    else return (N + ", " + Numbers(N-1));
 }
 
 int EnterData(string text)
@@ -18,8 +16,7 @@ int EnterData(string text)
     return number;
 }
 
-// Запросим координаты чисел
+// // Запросим координаты чисел
 int N = EnterData("Введите число N: ");
-// Поиск и вывод чисел 
-Numbers(N);
-Console.WriteLine(N);
+// // Поиск и вывод чисел 
+Console.WriteLine(Numbers(N));
